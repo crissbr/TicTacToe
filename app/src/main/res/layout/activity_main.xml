@@ -9,13 +9,13 @@
 
 
     <TextView
-        android:id="@+id/header_text"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Jogo da Velha"
+        android:layout_marginTop="16dp"
+        android:text="TIC TAC TOE"
         android:textColor="#FFEB3B"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,15 +25,29 @@
         android:id="@+id/imageView2"
         android:layout_width="112dp"
         android:layout_height="150dp"
-        android:layout_marginTop="107dp"
-        android:layout_marginBottom="107dp"
-        android:background="#298CFA"
+        android:layout_marginTop="24dp"
+        android:background="#459BFB"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/btn2"
+        app:layout_constraintBottom_toTopOf="@+id/header_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/vovo" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Whose turn is it?"
+        android:textColor="#FFEB3B"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vovo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btn0"

@@ -1,14 +1,15 @@
 package com.criscordeiro.jogodavelha;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -52,10 +53,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn6.setOnClickListener(this);
         btn7.setOnClickListener(this);
         btn8.setOnClickListener(this);
-
-
-
-
     }
 
     @Override
@@ -85,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 clickedBtn.setBackground(getDrawable(android.R.color.holo_orange_light));
             }
             activePlayer = PLAYER_O;
-            headerText.setText("Jogo da Velha");
+            headerText.setText("O turn");
         }
 
         checkForWin();
@@ -114,8 +111,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         }
-
-
     }
 
     private void showDialog(String winnerText){
@@ -145,15 +140,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn7.setText("");
         btn8.setText("");
 
-        btn0.setBackground(getDrawable(android.R.color.darker_gray));
-        btn1.setBackground(getDrawable(android.R.color.darker_gray));
-        btn2.setBackground(getDrawable(android.R.color.darker_gray));
-        btn3.setBackground(getDrawable(android.R.color.darker_gray));
-        btn4.setBackground(getDrawable(android.R.color.darker_gray));
-        btn5.setBackground(getDrawable(android.R.color.darker_gray));
-        btn6.setBackground(getDrawable(android.R.color.darker_gray));
-        btn7.setBackground(getDrawable(android.R.color.darker_gray));
-        btn8.setBackground(getDrawable(android.R.color.darker_gray));
+        btn0.setBackground(getDrawable(android.R.color.white));
+        btn1.setBackground(getDrawable(android.R.color.white));
+        btn2.setBackground(getDrawable(android.R.color.white));
+        btn3.setBackground(getDrawable(android.R.color.white));
+        btn4.setBackground(getDrawable(android.R.color.white));
+        btn5.setBackground(getDrawable(android.R.color.white));
+        btn6.setBackground(getDrawable(android.R.color.white));
+        btn7.setBackground(getDrawable(android.R.color.white));
+        btn8.setBackground(getDrawable(android.R.color.white));
+
         isGameActive = true;
     }
 }
+
