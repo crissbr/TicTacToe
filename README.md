@@ -7,4 +7,4 @@ Jogo da velha criado no Android Studio na linguagem Java, foi utilizado Constrai
 ![16_09_2020_02_14_24](https://user-images.githubusercontent.com/54155908/93295074-9a242e80-f7c2-11ea-810f-a99ee46136f0.jpg)
 
 
-Next: Melhorias
+Next: Melhorias Layout/Código
